@@ -23,9 +23,42 @@
 		</div>
 	</header>
 	<div class="mainnav">
-			<div class=" mainbar">
+		<div class=" mainbar">
+			<ul>
+				<li><a href="#" title><img src="theme/frontend/images/home.png"></a></li>
+				<li><a href="#" title class="smooth">Giới thiệu</a></li>
+				<li><a href="#" title class="smooth">tin tức</a></li>
+				<li>
+					<a href="#" title class="smooth">hoạt động nghiệp vụ</a>
+					<ul>
+						<li><a href="#" title>Cho vay lãi suất ưu đãi</a></li>
+						<li><a href="#" title>Cơ chế phát triển sạch (CMD)</a></li>
+						<li><a href="#" title>Tài trợ và đồng tài trợ</a></li>
+						<li><a href="#" title>Hỗ trợ lãi suất vay vốn sau đầu tư</a></li>
+						<li><a href="#" title>Kí quỹ cải tạo phục hồi môi trường sau khai thác khoáng sản</a></li>
+						<li><a href="#" title>Vốn ODA và cho vay ủy thac</a></li>
+					</ul>
+				</li>
+				<li><a href="#" title class="smooth">hợp tác quốc tế & gef</a></li>
+				<li><a href="#" title class="smooth">văn bản qppl & báo cáo</a></li>
+				<li>
+					<form>
+						<input type="text" name="search" placeholder="Nhập từ khóa cần tìm..">
+						<button type="submit">
+							<img src="theme/frontend/images/icon-search.png">
+						</button>
+					</form>
+				</li>
+			</ul>
+		</div>
+
+		<div class="menu-mobile">
+			<a href="#" title><img src="theme/frontend/images/home.png"></a>
+			<button class="menu-btn">
+				<i class="btn-bar"></i>
+			</button>
+			<div class="menu-mb">
 				<ul>
-					<li><a href="#" title><img src="theme/frontend/images/home.png"></a></li>
 					<li><a href="#" title class="smooth">Giới thiệu</a></li>
 					<li><a href="#" title class="smooth">tin tức</a></li>
 					<li>
@@ -41,42 +74,9 @@
 					</li>
 					<li><a href="#" title class="smooth">hợp tác quốc tế & gef</a></li>
 					<li><a href="#" title class="smooth">văn bản qppl & báo cáo</a></li>
-					<li>
-						<form>
-							<input type="text" name="search" placeholder="Nhập từ khóa cần tìm..">
-							<button type="submit">
-								<img src="theme/frontend/images/icon-search.png">
-							</button>
-						</form>
-					</li>
 				</ul>
 			</div>
-			
-			<div class="menu-mobile">
-				<a href="#" title><img src="theme/frontend/images/home.png"></a>
-				<button class="menu-btn">
-					<i class="btn-bar"></i>
-				</button>
-				<div class="menu-mb">
-					<ul>
-						<li><a href="#" title class="smooth">Giới thiệu</a></li>
-						<li><a href="#" title class="smooth">tin tức</a></li>
-						<li>
-							<a href="#" title class="smooth">hoạt động nghiệp vụ</a>
-							<ul>
-								<li><a href="#" title>Cho vay lãi suất ưu đãi</a></li>
-								<li><a href="#" title>Cơ chế phát triển sạch (CMD)</a></li>
-								<li><a href="#" title>Tài trợ và đồng tài trợ</a></li>
-								<li><a href="#" title>Hỗ trợ lãi suất vay vốn sau đầu tư</a></li>
-								<li><a href="#" title>Kí quỹ cải tạo phục hồi môi trường sau khai thác khoáng sản</a></li>
-								<li><a href="#" title>Vốn ODA và cho vay ủy thac</a></li>
-							</ul>
-						</li>
-						<li><a href="#" title class="smooth">hợp tác quốc tế & gef</a></li>
-						<li><a href="#" title class="smooth">văn bản qppl & báo cáo</a></li>
-					</ul>
-				</div>
-			</div>
+		</div>
 	</div>
 	<div class="info">
 		<div class="row">
@@ -155,7 +155,7 @@
 								</a>
 								<div class="text">
 									<a href="#" title class="smooth">
-									Tổ chức hưởng ứng tuần lễ biển và Hải đảo Việt Nam, tháng hành động vì môi trường năm 2019
+										Tổ chức hưởng ứng tuần lễ biển và Hải đảo Việt Nam, tháng hành động vì môi trường năm 2019
 									</a>
 								</div>
 								
@@ -166,8 +166,8 @@
 								</a>
 								<div class="text">
 									<a href="#" title class="smooth">
-									Tổ chức hưởng ứng tuần lễ biển và Hải đảo Việt Nam, tháng hành động vì môi trường năm 2019
-								</a>
+										Tổ chức hưởng ứng tuần lễ biển và Hải đảo Việt Nam, tháng hành động vì môi trường năm 2019
+									</a>
 								</div>
 								
 							</div>
@@ -489,6 +489,33 @@
 						<a href="#" title><img src="theme/frontend/images/img-online2.png"></a>
 					</div>
 				</div>
+				<div class="text-slider">
+					<h2>Họp trực tuyến</h2>
+				</div>
+				<div class="img-video">
+					<ul class="nav nav-tabs h-tab">
+						<li class="nav-item">
+							<a class="nav-link active" data-toggle="tab" href="#img" title>Hình ảnh</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-toggle="tab" href="#video" title>Video</a>
+						</li>
+					</ul>
+				</div>
+				<div class="tab-content">
+					<div class=" tab-pane show active" id="img">
+						<a href="#" title><img src="theme/frontend/images/img-tab.png"></a>
+						<div class="text">
+							<a href="#" title>Hội nghị tài chính năm 2019 sôi nổi với phần giới thiệu và giải đáp thắc mắc về nghị quyết...</a>
+						</div>
+					</div>
+					<div class=" tab-pane fade" id="video">
+						<a href="#" title><img src="theme/frontend/images/video-tab.png"></a>
+						<div class="text">
+							<a href="#" title>Hội nghị tài chính năm 2019 sôi nổi với phần giới thiệu và giải đáp thắc mắc về nghị quyết...</a>
+						</div>
+					</div>
+				</div>
 				<div class="wather">
 					<img src="theme/frontend/images/img-wather.png">
 				</div>
@@ -531,82 +558,82 @@
 	</div>
 	<div class="mainnav list-foot">
 		<div class=" mainbar">
-				<ul>
-					<li><a href="#" title><img src="theme/frontend/images/home.png"></a></li>
-					<li><a href="#" title class="smooth">Giới thiệu</a></li>
-					<li><a href="#" title class="smooth">tin tức</a></li>
-					<li><a href="#" title class="smooth">hoạt động nghiệp vụ</a></li>
-					<li><a href="#" title class="smooth">hợp tác quốc tế & gef</a></li>
-					<li><a href="#" title class="smooth">văn bản qppl & báo cáo</a></li>
-					<li>
-						<form>
-							<input type="text" name="search" placeholder="Nhập từ khóa cần tìm..">
-							<button type="submit">
-								<img src="theme/frontend/images/icon-search.png">
-							</button>
-						</form>
-					</li>
-				</ul>
-			</div>
+			<ul>
+				<li><a href="#" title><img src="theme/frontend/images/home.png"></a></li>
+				<li><a href="#" title class="smooth">Giới thiệu</a></li>
+				<li><a href="#" title class="smooth">tin tức</a></li>
+				<li><a href="#" title class="smooth">hoạt động nghiệp vụ</a></li>
+				<li><a href="#" title class="smooth">hợp tác quốc tế & gef</a></li>
+				<li><a href="#" title class="smooth">văn bản qppl & báo cáo</a></li>
+				<li>
+					<form>
+						<input type="text" name="search" placeholder="Nhập từ khóa cần tìm..">
+						<button type="submit">
+							<img src="theme/frontend/images/icon-search.png">
+						</button>
+					</form>
+				</li>
+			</ul>
+		</div>
 	</div>
 	
 	<footer>
 		<div class="list-content">
-				<ul>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Thư viện</p>
-						</a>
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Hỏi đáp</p>
-						</a>
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Liên hệ</p>
-						</a>
+			<ul>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Thư viện</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Hỏi đáp</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Liên hệ</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Thư điện tử</p>
+					</a>
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">RSS</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="#" title>
 						
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Thư điện tử</p>
-						</a>
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">RSS</p>
-						</a>
-						
-					</li>
-					<li>
-						<a href="#" title>
-						
-							<p class="text">Sơ đồ</p>
-						</a>
-						
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Đăng nhập</p>
-						</a>
-						
-					</li>
-					<li>
-						<a href="#" title>
-							
-							<p class="text">Tiếng Anh</p>
-						</a>
-						
-					</li>
-				</ul>
+						<p class="text">Sơ đồ</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Đăng nhập</p>
+					</a>
+
+				</li>
+				<li>
+					<a href="#" title>
+
+						<p class="text">Tiếng Anh</p>
+					</a>
+
+				</li>
+			</ul>
 		</div>
 		<div class="row foot">
 			<div class="col-lg-2 col-md-2 col-ms-2">
