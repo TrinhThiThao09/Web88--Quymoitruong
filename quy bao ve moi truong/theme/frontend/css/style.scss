@@ -27,6 +27,13 @@
 	font-family: UTMAmericanaB;
 	margin-left: 15px;
 }
+.fixed-nav{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	transition: 0.3s;
+	top: 16px;
+}
 .mainnav{
 	background: #00923f;
 	margin-top: -17px;
@@ -35,13 +42,14 @@
 		list-style-type: none;		
 		margin-bottom: 10px;
 		margin-top: 10px;
+		padding-left: 0;
 	}
 	.mainbar > ul>li{
 		display: inline-block;
 		position: relative;
 	}
 	.mainbar > ul >li>a{
-		padding: 17px 17px 18px 17px;
+		padding: 17px 17px 20px 17px;
 		color: #fff;
 		text-transform: uppercase;
 	}
@@ -81,7 +89,6 @@
 	form{
 		position: relative;
 		margin-right: 10px;
-		top: 4px;
 		input{
 			border: none;
 			padding: 5px 30px 7px 15px;
@@ -112,12 +119,13 @@
 	.time{
 		.icon{
 			float: left;
-			margin-top: 10px;
+			margin-top: 13px;
 			margin-left: 20px;
 		}
 		p{
-			margin-top: 5px;
+			margin-top: 9px;
 			margin-left: 40px;
+			margin-bottom: 0;
 		}
 	}
 	
@@ -131,10 +139,12 @@
 				color: #000000d9;
 				img{
 					float: left;
-					margin-top: 5px;
+					margin-top: 8px;
 				}
 				p{
 					margin-left: 23px;
+					margin-bottom: 12px;
+					margin-top: 4px;
 				}
 			}
 			a:hover{
@@ -161,7 +171,7 @@
 		.slick-next{
 			position: absolute;
 			z-index: 99;
-			right: 50px;
+			right: 55px;
 			padding: 3px 15px;
 			top: 10px;
 			outline: none;
@@ -209,16 +219,21 @@
 			top: 10px;
 			p{
 				text-transform: uppercase;
-    			font-weight: bold;
+				font-weight: bold;
 			}
+		}
+		.ct{
+			margin-left: 61px;
+			position: absolute;
+			margin-top: 13px;
 		}
 	}
 	.regulatory-text{
 		margin-bottom: 30px;
 		.text-title{
 			padding: 5px 0px 4px 10px;
-		    background: #00923f;
-		    color: #fff;
+			background: linear-gradient(to bottom, #00923f, #00923f9e);
+			color: #fff;
 		}
 		.text-content{
 			padding:15px;
@@ -235,6 +250,7 @@
 					font-weight: bold;
 				}
 				a:hover{
+					text-shadow: 0px 0px 2px;
 					text-decoration: none;
 				}
 			}
@@ -244,12 +260,19 @@
 		margin-bottom: 10px;
 		a{
 			float: left;
+
+			img{
+				width: 140px;
+				height: 72px;
+				object-fit: contain;
+			}
 		}
 		h3{
-			margin-left: 189px;
+			margin-left: 140px;
 			font-size: 18px;
 			a{
 				color: #000;
+				font-size: 15px;
 			}
 			a:hover{
 				color: #00923f;
@@ -259,7 +282,7 @@
 	}
 	form{
 		.text-title{
-			background: #00923f;
+			background: linear-gradient(to bottom, #00923f, #00923f9e);
 			color: #fff;
 			padding: 5px 0px 5px 10px;
 			text-transform: uppercase;
@@ -274,6 +297,10 @@
 			input{
 				margin-bottom: 10px;
 				width: 100%;
+				outline: none;
+			}
+			.content-project{
+				height: 80px;
 			}
 			h6:after{
 				content: "*";
@@ -288,8 +315,8 @@
 				}
 				a{
 					padding: 6px;
-					background: #00923f;
-					border-radius: 10px;
+					background: linear-gradient(to bottom, #00923f, #00923f9e);
+					border-radius: 5px;
 					color: #fff;
 					text-transform: uppercase;
 					font-size: 15px;
@@ -324,6 +351,7 @@
 			margin-bottom: 17px;
 			ul{
 				margin-bottom: 0px;
+				padding-bottom: 10px;
 				li{
 					display: inline-block;
 					.time{
@@ -354,6 +382,7 @@
 				text-transform: uppercase;
 				font-weight: bold;
 				display: inline-block;
+				font-size: 21px;
 			}
 			.note{
 				width: 12px;
@@ -366,6 +395,7 @@
 				display: inline-block;
 				right: 0px;
 				ul{
+					padding-left: 0;
 					li{
 						display: inline-block;
 						list-style-type: none;
@@ -402,6 +432,114 @@
 			}
 		}
 	}
+	.answer{
+		border: 1px solid #0000004d;
+		padding: 20px;
+		.search{
+			border-bottom: 1px solid #0000004d;
+			padding-bottom: 15px;
+
+			p{
+				float: left;
+			}
+			input{
+				left: 150px;
+				position: absolute;
+				width: 61%;
+				outline: none;
+			}
+			select{
+				left: 150px;
+				width: 20%;
+				position: absolute;
+				outline: none;
+				height: 30px;
+			}
+			a{
+				left: 370px;
+				position: absolute;
+				padding: 3px 7px;
+				background: #00000040;
+				color: #005d80;
+				border-radius: 5px;
+
+			}
+			a:hover{
+				text-decoration: none;
+				background:#0000004f;
+				color: #fff;
+			}
+
+		}
+		.text-main{
+			text-align: right;
+			margin-top: 20px;
+			p{
+				font-weight: bold;
+			}
+		}
+		span{
+			margin-left: 10px;
+		}
+		.ques-ans{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #00000047;
+			h6{
+				color: #003980;
+			}
+			.client{
+				text-align: right;
+				p{
+					color: #000000b8;
+					font-style: italic;
+				}
+			}
+		}
+	}
+	.source{
+		text-align: center;
+		margin-top: 50px;
+		p{
+			font-weight: bold;
+			color: #000000b8;
+		}
+	}
+	.collab{
+		margin-bottom: 40px;
+		border-bottom: 1px solid #00000038;
+		padding-bottom: 20px;
+		img{
+			float: left;
+		}
+		.text{
+			margin-left: 320px;
+			a{
+				font-weight: bold;
+				color: #000;
+				font-size: 20px;
+			}
+			a:hover{
+				text-decoration: none;
+				color: #00923f;
+			}
+		}
+	}
+	.title-detail{
+		margin-bottom: 30px;
+		h4{
+			font-weight: bold;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+	.video-main{
+		margin-bottom: 50px;
+		img{
+			width: 100%;
+		}
+	}
 }
 .conference{
 	a{
@@ -420,7 +558,7 @@
 			margin-right: 245px;
 			text-transform: uppercase;
 			color: #fff;
-			background: #00923f;
+			background: linear-gradient(to bottom, #00923f, #00923f9e);
 			padding: 10px;
 			font-size: 17px;
 			margin-bottom: 0px;
@@ -480,23 +618,29 @@
 	.title{
 		border-bottom: 2px solid #00923f;
 		position: relative;
+		.video{
+			margin-left: 125px;
+		}
 		h6{
 			text-transform: uppercase;
 			color: #fff;
-			background: #00923f;
-			padding: 10px;
+			background: linear-gradient(to bottom, #00923f, #00923f9e);
+			padding: 10px 20px;
 			font-size: 17px;
 			margin-bottom: 0px;
 			float: left;
-			border-top-right-radius: 35px;
+			border-top-right-radius: 30px;
 		}
+
 		
 		a{
 			margin-left: 16px;
 			margin-top: 9px;
 			position: absolute;
 			color: #000;
-			font-size: 18px;
+			font-size: 16px;
+			font-weight: bold;
+			text-transform: uppercase;
 		}
 	}
 	.list-question{
@@ -505,7 +649,7 @@
 		border: 1px solid #0003;
 	}
 	.text-content{
-		padding: 15px;
+		padding: 25px;
 		strong{
 			color: #00923f;
 		}
@@ -571,7 +715,7 @@
 }
 .action{
 	.title{
-		background: #00923f;
+		background: linear-gradient(to bottom, #00923f, #00923f9e);
 		padding: 7px 0px 7px 10px;
 		h5{
 			margin-bottom: 0px;
@@ -600,11 +744,18 @@
 				margin-left: 60px;
 				position: relative;
 				top: 10px;
-				border-bottom: 1px dashed;
+				a{
+					color: #296f47;
+					font-weight: bold;
+				}
+				a:hover{
+					text-decoration: none;
+					color: #28a745;				
+				}
 			}
 		}
 	}
-	
+
 }
 .online_slider{
 	margin-top: 20px;
@@ -635,7 +786,7 @@
 	}
 }
 .img-video{
-	background: #00923f;
+	background: linear-gradient(to bottom, #00923f, #00923f9e);
 	border-radius: 6px;
 	padding-top: 5px;
 	margin-top: 20px;
@@ -659,6 +810,7 @@
 	margin-top: -2px;
 	.text{
 		padding: 10px;
+		text-align: center;
 		a{
 			color: #000000a8;
 			font-weight: bold;
@@ -668,18 +820,25 @@
 			text-decoration: none;
 		}
 	}
+	img{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+
+	}
 }
 .wather{
 	margin-top: 20px;
 	img{
 		display: block;
-		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 .connect{
 	margin-top: 20px;
 	.title{
-		background: #00923f;
+		background: linear-gradient(to bottom, #00923f, #00923f9e);
 		padding: 7px 0px 7px 10px;		
 		p{
 			margin-bottom: 0px;
@@ -690,21 +849,90 @@
 	}
 	.option{
 		background: #e3e3e3;
-		padding: 20px 15px;
-		select{
+		padding-bottom: 35px;
+		.custom-select {
+			position: relative;
+			font-family: Arial;
+			border: none;
+			background: none;
+			width: 90%;
+		}
+		.career-units{
+			margin-top: 10px;
+		}
+		.custom-select select {
+			display: none; /*hide original SELECT element:*/
+		}
+
+		.select-selected {
+			background-color: #00800036;
+			color: green!important;
 			width: 100%;
-			padding: 5px;
-			outline: none;
-			margin-bottom: 5px;
-			margin-top: 5px;
+			display: block;
+			position: absolute;
+			border: none!important;
+			cursor: pointer;
+			padding: 5px 16px;
+			user-select: none;
+		}
+
+		/*style the arrow inside the select element:*/
+		.select-selected:after {
+			position: absolute;
+			content: "";
+			top: 14px;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border: 6px solid transparent;
+			border-color: #fff transparent transparent transparent;
+		}
+
+		/*point the arrow upwards when the select box is open (active):*/
+		.select-selected.select-arrow-active:after {
+			border-color: transparent transparent #fff transparent;
+			top: 7px;
+		}
+
+		/*style the items (options), including the selected item:*/
+		.select-items div,.select-selected {
+			color: green;
+			padding: 8px 16px;
+			border: 1px solid transparent;
+			border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+			cursor: pointer;
+			user-select: none;
+			transition: .2s;
+		}
+
+		/*style items (options):*/
+		.select-items {
+			position: absolute;
+			background: #c9e4c9;
+
+			top: 100%;
+			left: 12px;
+			right: -12px;
+			z-index: 99;
+		}
+
+		/*hide the items when the select box is closed:*/
+		.select-hide {
+			display: none;
+		}
+
+		.select-items div:hover, .same-as-selected {
+			background: green;
+			color: #fff;
 		}
 	}
+
 }
 .statistical{
 	margin-top: 20px;
 	margin-bottom: 40px;
 	.title{
-		background: #00923f;
+		background: linear-gradient(to bottom, #00923f, #00923f9e);
 		padding: 7px 0px 15px 10px;		
 		text-align: center;
 		p{
@@ -726,7 +954,7 @@
 			}
 		}
 	}
-	
+
 }
 footer{
 	color: #fff;
@@ -739,7 +967,7 @@ footer{
 		margin-left: 69px;
 		margin-top: -33px;
 	}
-	
+
 	.list-content{
 		text-align: right;
 		ul{
@@ -797,6 +1025,7 @@ footer{
 		font-weight: bold;
 	}
 	.time{
+
 		ul{
 			padding-left: 0px;
 		}
@@ -905,6 +1134,44 @@ footer{
 		}
 
 	}
+	.title-main{
+		margin-bottom: 10px;
+		h4{
+			float: left;
+			text-transform: uppercase;
+			font-weight: bold;
+			color: #00923f;
+		}
+		a{
+			position: absolute;
+			right: 30px;
+			padding: 3px 7px;
+			background: #00923f;
+			color: #fff;
+			border-radius: 5px;
+		}
+		a:hover{
+			text-decoration: none;
+			background: #00806e;
+		}
+	}
+	.content-text{
+		margin-bottom: 30px;
+		text-align: center;
+		img{
+
+		}
+		.ct-video{
+			margin-top: 10px;
+			a{
+				color: #000;
+			}
+			a:hover{
+				text-decoration: none;
+				color: #00923f;
+			}
+		}
+	}
 }
 
 @media all and (min-width: 1126px){
@@ -913,18 +1180,13 @@ footer{
 	}
 }
 @media all and (max-width: 1126px){
+	.content .answer .search select{
+		width: 25%;
+	}
 	.mainbar{
 		display: none;
 	}
-	.header{
-		display: none;
-	}
-	.header-text{
-		display: none;
-	}
-	.header-text-under{
-		display: none;
-	}
+
 	.mainnav form{
 		margin-bottom: 10px;
 	}
@@ -932,7 +1194,7 @@ footer{
 		display: none;
 	}
 	.content{
-		margin-top: 200px;
+		margin-top: 10px;
 	}
 	.content .home_slider .item .text a {
 		font-size: 16px;
@@ -962,9 +1224,8 @@ footer{
 		display: none;
 	}
 	.menu-mobile {
-		background: #00923f;
-		position: fixed;
-		top: 0;
+		background: linear-gradient(to bottom, #00923f, #00923f9e);
+
 		left: 0;
 		right: 0;
 		z-index: 999;
@@ -974,7 +1235,7 @@ footer{
 			width: 40px;
 			height: 40px;
 			margin-left: 20px;
-			margin-bottom: 10px;
+			margin-bottom: 5px;
 		}
 	}
 	.menu-mobile .menu-btn {
@@ -1072,8 +1333,16 @@ footer{
 									font-size: 25px;
 									margin-top: -27px;
 								}
-							}
+								.connect .option .custom-select{
+									width: 97%;
+								}
 
+							}
+							@media all and (max-width: 1126px) and (min-width: 767px){
+								.text-slider h2{
+									font-size: 20px;
+								}
+							}
 							@media all and (max-width: 930px) and (min-width: 767px){
 								.content .ct a{
 									float: none;
@@ -1095,5 +1364,112 @@ footer{
 							@media all and (max-width: 913px) and (min-width: 791px){
 								.content form .mainform .submit .sent {
 									float: none;
+								}
+							}
+							@media all and (max-width: 1125px) and (min-width: 970px){
+								.logo-text{
+									margin-left: 28%;
+									margin-top: -25px;
+								}
+							}
+							@media all and (max-width: 970px) and (min-width: 767px){
+								.logo-text{
+									margin-left: 33%;
+									font-size: 18px;
+									margin-top: -23px;
+								}
+								.header-text{
+									font-size: 25px;
+								}
+								.header-text-under{
+									font-size: 15px;
+								}
+								.content .title-detail h4{
+									font-size: 20px;
+								}
+							}
+
+							@media all and (max-width: 767px) and (min-width: 576px){
+								.header{
+									margin-bottom: 10px;
+								}
+								.logo-text {
+									margin-left: 27%;
+									font-size: 18px;
+									margin-top: -16px;
+								}
+								.header-text{
+									font-size: 22px;
+								}
+								.header-text-under{
+									font-size: 14px;
+								}
+								.menu-mobile img {
+									width: 30px;
+									height: 30px;
+									margin-left: 20px;
+									margin-bottom: 5px;
+								}
+								.menu-mobile .menu-btn{
+									height: 35px;
+								}
+								.content .ct h3 a{
+									font-size: 14px;
+								}
+
+								.content .home_slider .slick-prev{
+									padding: 0px 9px;
+								}
+								.content .home_slider .slick-next{
+									padding: 0px 9px;
+									right: 43px;
+								}
+								footer .text {
+									margin-left: 24%;
+									font-size: 16px;
+									margin-top: -8px;
+								}
+								footer h5{
+									font-size: 13px;
+								}
+							}
+							@media all and (max-width: 576px){
+								.header-text{
+									margin-top: 0px;
+									font-size: 28px;
+								}
+								.header-text-under{
+									font-size: 20px;
+								}
+								.mainnav{
+									margin-top: 0px;
+								}
+								footer .text {
+									margin-left: 14%;
+								}
+								.fixed-nav{
+									top: 0px;
+								}
+							}
+							@media all and (max-width: 1004px) and (min-width: 767px){
+								.connect .option .career-units {
+									margin-top: 36px;
+								}
+							}
+							@media all and (max-width: 970px){
+								.container .title-main h4{
+									font-size: 20px;
+								}
+								.content .news-report .title-news h3{
+									font-size: 20px;
+								}
+								.content .collab .text a{
+									font-size: 16px;
+								}
+								.container h3 {
+									font-size: 23px;
+								}
+								.container .text-title-news .main-text {
+									font-size: 15px;
 								}
 							}
